@@ -105,3 +105,19 @@ colors = ['c','m','r','b']
 plt.pie(slices, labels = activities, colors = colors, shadow = True, explode = (0,0.1,0,0), autopct = '%1.1f%%')
 plt.title('Pie Plot')
 plt.show()
+
+# Working with Multiple Plots
+
+import numpy as np
+
+def f(t):
+  return np.exp(-t) * np.cos(2*np.pi*t)
+
+t1 = np.arange(0,5,0.1)
+t2 = np.arange(0,5,0.2)
+
+plt.subplot(211)
+plt.plot(t1,f(t1), 'bo', t2, f(t2))
+plt.subplot(212)
+plt.plot(t2,np.cos(2*np.pi*t2))
+plt.show()
