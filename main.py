@@ -23,6 +23,8 @@ plt.show()
 
 from matplotlib import style
 
+style.use('ggplot')
+
 x = [5,8,10]
 y = [12,16,6]
 
