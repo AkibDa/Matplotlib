@@ -95,3 +95,13 @@ plt.ylabel('y')
 plt.title('Stack Plot')
 plt.legend()
 plt.show()
+
+# plotting a pie chart
+
+slices = [7,2,2,13]
+activities = ['sleeping','eating','working','playing']
+colors = ['c','m','r','b']
+
+plt.pie(slices, labels = activities, colors = colors, shadow = True, explode = (0,0.1,0,0), autopct = '%1.1f%%')
+plt.title('Pie Plot')
+plt.show()
