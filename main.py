@@ -43,6 +43,8 @@ plt.grid(True,color = 'k')
 
 plt.show()
 
+# plotting a bar graph
+
 plt.bar([1,3,5,7,9],[5,2,7,8,2], label = 'bar one')
 plt.bar([2,4,6,8,10],[8,6,2,5,6], label = 'bar two', color = 'g')
 plt.legend()
