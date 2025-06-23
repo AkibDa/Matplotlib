@@ -21,12 +21,22 @@ plt.plot([1,2,3],[4,5,1])
 # Showing what we plotted
 plt.show()
 
+from matplotlib import style
+
 x = [5,8,10]
 y = [12,16,6]
 
-plt.plot(x,y)
-plt.title('Info')
+x2 = [6,9,11]
+y2 = [6,15,7]
+
+plt.plot(x,y, label = 'line one', linewidth = 5)
+plt.plot(x2,y2, label = 'line two', linewidth = 5)
+
+plt.title('Epic Info')
 plt.xlabel('X axis')
 plt.ylabel('Y axis')
+
+plt.legend()
+plt.grid(True,color = 'k')
 
 plt.show()
