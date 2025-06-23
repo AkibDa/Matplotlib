@@ -29,8 +29,8 @@ y = [12,16,6]
 x2 = [6,9,11]
 y2 = [6,15,7]
 
-plt.plot(x,y, label = 'line one', linewidth = 5)
-plt.plot(x2,y2, label = 'line two', linewidth = 5)
+plt.plot(x,y, 'g' ,label = 'line one', linewidth = 5)
+plt.plot(x2,y2, 'c' ,label = 'line two', linewidth = 5)
 
 plt.title('Epic Info')
 plt.xlabel('X axis')
